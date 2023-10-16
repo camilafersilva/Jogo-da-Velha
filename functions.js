@@ -10,7 +10,8 @@ const div8 = document.querySelector("#oito");
 const div9 = document.querySelector("#nove");
 const btn = document.querySelector("#btn");
 let cont = 0;
-btn.addEventListener("click",function(){
+var check = false;
+btn.addEventListener("click", function () {
     window.location.reload();
 })
 div1.addEventListener("click", function () {
@@ -126,7 +127,7 @@ div9.addEventListener("click", function () {
 
 
 function nextPlayer() {
-    var check = checkWinner();
+    check = checkWinner();
 
     if (player == "o" && check != true) {
 
@@ -145,6 +146,7 @@ function checkWinner() {
 
     if ((div4.textContent == div5.textContent) && (div5.textContent == div6.textContent) && div4.innerHTML != "" && div5.innerHTML != "" && div6.innerHTML != "") {
         alert("Vencdor é o player " + div4.textContent);
+
         return true
     }
 
@@ -186,7 +188,8 @@ function checkVelha() {
 }
 function addCont() {
     cont += 1;
-
+    console.log(cont);
+    console.log(check);
     if (cont == 9 && check != true) {
         checkVelha();
     }
