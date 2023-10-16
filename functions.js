@@ -139,27 +139,39 @@ function nextPlayer() {
 }
 function checkWinner() {
     if ((div1.textContent == div2.textContent) && (div2.textContent == div3.textContent) && div1.innerHTML != "" && div2.innerHTML != "" && div3.innerHTML != "") {
-        alert("Vencdor é o player " + player);
+        alert("Vencdor é o player " + div1.textContent);
         return true
     }
 
     if ((div4.textContent == div5.textContent) && (div5.textContent == div6.textContent) && div4.innerHTML != "" && div5.innerHTML != "" && div6.innerHTML != "") {
-        alert("Vencdor é o player " + player);
+        alert("Vencdor é o player " + div4.textContent);
         return true
     }
 
     if ((div7.textContent == div8.textContent) && (div8.textContent == div9.textContent) && div7.innerHTML != "" && div8.innerHTML != "" && div9.innerHTML != "") {
-        alert("Vencdor é o player " + player);
+        alert("Vencdor é o player " + div7.textContent);
         return true
     }
 
     if ((div1.textContent == div5.textContent) && (div5.textContent == div9.textContent) && div1.innerHTML != "" && div5.innerHTML != "" && div9.innerHTML != "") {
-        alert("Vencdor é o player " + player);
+        alert("Vencdor é o player " + div1.textContent);
         return true
     }
 
     if ((div3.textContent == div5.textContent) && (div5.textContent == div7.textContent) && div3.innerHTML != "" && div5.innerHTML != "" && div7.innerHTML != "") {
-        alert("Vencdor é o player " + player);
+        alert("Vencdor é o player " + div3.textContent);
+        return true
+    }
+    if ((div1.textContent == div4.textContent) && (div4.textContent == div7.textContent) && div1.innerHTML != "" && div4.innerHTML != "" && div7.innerHTML != "") {
+        alert("Vencdor é o player " + div1.textContent);
+        return true
+    }
+    if ((div2.textContent == div5.textContent) && (div5.textContent == div8.textContent) && div2.innerHTML != "" && div5.innerHTML != "" && div8.innerHTML != "") {
+        alert("Vencdor é o player " + div2.textContent);
+        return true
+    }
+    if ((div3.textContent == div6.textContent) && (div6.textContent == div9.textContent) && div3.innerHTML != "" && div6.innerHTML != "" && div9.innerHTML != "") {
+        alert("Vencdor é o player " + div3.textContent);
         return true
     }
 
